@@ -7,7 +7,7 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
         print(os.path.join(dirname, filename))
 
 import pandas as pd
-data =  pd.read_csv("./data/sensor.csv")
+data = pd.read_excel("./data/sensor.xlsb", engine='pyxlsb')
 
 data.shape
 
